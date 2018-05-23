@@ -1,21 +1,24 @@
+
 public class Reiziger {
     private String name;
-    private boolean heeftTicket = false;
+    private Ticket ticket;
     private Station eindbestemming;
-    private Klas klas;
 
-    public Reiziger(String name, boolean heeftTicket, Station eindbestemming, Klas klas) {
+    public Reiziger(String name, Ticket ticket, Station eindbestemming) {
         this.name = name;
-        this.heeftTicket = heeftTicket;
+        this.ticket = ticket;
         this.eindbestemming = eindbestemming;
-        this.klas = klas;
     }
 
     public String getName() {
         return name;
     }
 
-    public Klas getKlas() {
-        return klas;
+    public Ticket getTicket() {
+        return ticket;
+    }
+
+    public Station getEindbestemming() {
+        return eindbestemming;
     }
 }
